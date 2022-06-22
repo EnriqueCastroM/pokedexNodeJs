@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <%- include('partials/head.ejs') %>
+</head>
+
+<body>
+    <%- include('partials/navigation.ejs') %>
+        <main class="vh-100 container pt-2 text-center d-flex justify-content-cente align-items-center">
+            <section>
+                <h1 class="display-1">About</h1>
+                <p>Pokédex de la primera generacion de Pokémon utilizando NodeJs</p>
+                <h1 class="display-1">Otros proyectos:</h1>
+                <a href="https://pinterestclona.netlify.app/">Clon de Pinterest HTML CSS no funcionalidad</a>
+                <a href="https://brujasenlacecreativo.com/">Cliente: Brujas Enlace Creativo</a>
+                <a href="https://pokedexenrique.netlify.app/">Pokédex nativo HTML CSS JS</a>
+            </section>
+        </main>
+    <%- include('partials/footer.ejs') %>    
+</body>
+
+</html>
