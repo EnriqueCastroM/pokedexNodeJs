@@ -7,11 +7,12 @@ body {
 }
 main {
     padding: 60px;
-    display: grid;
-    grid-template-columns: 50% 50%;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     color: azure;
+}
+.container{
+
 }
 #section1 {
     margin-left: 50%;
@@ -187,6 +188,7 @@ input {
     height: 600px;
     width: 420px;
     border-radius: 10%;
+    display: flex;
 }
 .poke-card::before {
     content: '';

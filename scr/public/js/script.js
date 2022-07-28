@@ -12,7 +12,7 @@ let urlPokemon = ' https://pokeapi.co/api/v2/pokemon'
 let btnNext;
 let btnPrevious;
 let templateHtml;
-console.log('⏮⏩')
+
 
 const GetPokemons = async (url) => {
     try {
@@ -121,7 +121,6 @@ const renderPokemonImg = data => {
     pokeImg.setAttribute('src', sprite);
     
 }
-
 
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
