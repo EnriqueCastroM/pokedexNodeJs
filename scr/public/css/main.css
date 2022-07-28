@@ -5,7 +5,10 @@ body {
     padding-bottom: 3em;
     min-height: 100vh;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 main {
     padding: 60px;
     display: grid;
@@ -14,7 +17,10 @@ main {
     font-family: 'Roboto Mono', monospace;
     color: azure;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 #section1 {
     margin-left: 50%;
     background-color: #BD0F34;
@@ -24,15 +30,23 @@ main {
     position: relative;
     display: flex;
 }
+<<<<<<< HEAD
 
 .pad {
     position: absolute; 
+=======
+.pad {
+    position: absolute;
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
     height: 105px;
     width: 105px;
     margin-top: 105%;
     margin-left: 300px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .amarillo {
     height: 70px;
     width: 130px;
@@ -41,9 +55,13 @@ main {
     position: absolute;
     margin-top: 111%;
     margin-left: 25%;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-negro {
     position: relative;
     width: 60px;
@@ -53,7 +71,10 @@ main {
     border-radius: 70px;
     background-color: #1A1E1E;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .barra-verde {
     position: relative;
     background-color: green;
@@ -63,7 +84,10 @@ main {
     margin-left: 6%;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .barra-roja {
     position: relative;
     background-color: #FF4763;
@@ -73,7 +97,10 @@ main {
     margin-left: 5%;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .contenedor-pcard {
     position: relative;
     flex-direction: row;
@@ -89,7 +116,10 @@ main {
     background-color: #DEDEDE;
     border: 1px solid black;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-card {
     position: absolute;
     font-family: 'Roboto Mono', monospace;
@@ -103,11 +133,17 @@ main {
     margin-top: 5%;
     padding-top: 15px;
 }
+<<<<<<< HEAD
 
 .poke-img {
     width: 180px;
 }
 
+=======
+.poke-img {
+    width: 180px;
+}
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 #enlace {
     background-color: #CE1131;
     margin-top: auto;
@@ -118,9 +154,13 @@ main {
     border-top-right-radius: 50px;
     position: absolute;
     margin-left: 84%;
+<<<<<<< HEAD
     
 }
 
+=======
+}
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .top {
     position: absolute;
     width: 450px;
@@ -130,7 +170,10 @@ main {
     justify-content: center;
     text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-blanco {
     position: relative;
     width: 86px;
@@ -141,7 +184,10 @@ main {
     border-radius: 50px;
     background-color: white;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-azul {
     position: relative;
     width: 70px;
@@ -150,7 +196,10 @@ main {
     margin-left: 1PX;
     background-color: #28AAFD;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-rojo {
     position: relative;
     width: 20px;
@@ -159,9 +208,13 @@ main {
     margin-left: 32%;
     border-radius: 50px;
     background-color: #FF4763;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-amarillo {
     position: relative;
     width: 20px;
@@ -171,7 +224,10 @@ main {
     border-radius: 50px;
     background-color: yellow;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-verde {
     position: relative;
     width: 20px;
@@ -180,9 +236,13 @@ main {
     margin-left: 48%;
     border-radius: 50px;
     background-color: green;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 form {
     position: absolute;
     width: 280px;
@@ -193,18 +253,27 @@ form {
     margin-top: 25%;
     margin-left: 15%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 label {
     font-family: 'Roboto Mono', monospace;
     margin-top: 3%;
     color: azure;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 input {
     width: 40%;
     margin-top: 3%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 #section2 {
     margin-top: auto;
     margin-left: 2%;
@@ -213,7 +282,10 @@ input {
     width: 420px;
     border-radius: 10%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-card::before {
     content: '';
     background: radial-gradient(black 33%, transparent 33%);
@@ -226,13 +298,19 @@ input {
     top: 10px;
     z-index: -1;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .img-container {
     position: relative;
     width: 180px;
     margin: 10px auto;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-stats div {
     display: flex;
     justify-content: space-between;
@@ -240,14 +318,20 @@ input {
     padding: 5px;
     font-size: 18px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-types div {
     padding: 5px;
     margin: 5px;
     border-radius: 4px;
     border: 1px dashed black;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .footer {
     color: rgb(0, 0, 0);
     padding: 0.5em 0;
@@ -257,4 +341,55 @@ input {
     display: flex;
     justify-content: center;
     font-size: large;
+<<<<<<< HEAD
 }
+=======
+}
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(73, 9, 121, 0.8855742125951943) 0%,
+      rgba(244, 0, 255, 1) 100%,
+      rgba(3, 153, 216, 1) 100%
+    );
+  }
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .lists__pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 2em;
+    padding: 1em;
+    text-align: center;
+  }
+  .pokemon__img {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 8em;
+    color: #fff;
+    padding: 0.5em;
+  }
+  .pokemon__img img {
+    height: 200px;
+    width: 100%;
+    margin-top: -5em;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 2em auto 2em;
+  }
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f

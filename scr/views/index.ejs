@@ -7,13 +7,14 @@
     <title><%= title %></title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- script defer -->
-<script src="/js/script.js" type="text/javascript" defer></script>   
-    <%- include('partials/head.ejs') %> 
+<script src="/js/script.js" type="text/javascript" defer></script>
+    <%- include('partials/head.ejs') %>
 </head>
 <body>
 
 <!-- NAVBAR -->
 <%- include('partials/navigation.ejs') %>
+<<<<<<< HEAD
 
 <main>
     <section id="section1">
@@ -55,5 +56,64 @@
 <!-- FOOTER -->
 <%- include('partials/footer.ejs') %> 
 
+=======
+<main>
+
+    <section>
+        <li>
+
+        </li>
+    </section>
+
+    <section id="section1">
+        <div><img class="pad" src="img/pad.png"></div>
+        <div class="cir-negro"></div>
+        <div class="barra-verde"></div>
+        <div class="barra-roja"></div>
+        <div class="amarillo"></div>
+        <div class="top">
+            <div class="cir-rojo"></div>
+            <div class="cir-amarillo"></div>
+            <div class="cir-verde"></div>
+            <div class="cir-blanco">
+                <div class="cir-azul"></div>
+            </div>
+        </div>
+        <form action="" onsubmit="searchPokemon(event)">
+            <div><Label id="who">Who's that Pokémon?</Label></div>
+            <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <div class="contenedor-pcard">
+            <div data-poke-card class="poke-card">
+                <div data-poke-name>
+                    <h4>Pokedex</h4>
+                </div>
+                <div data-poke-img-container class="img-container">
+                    <img data-poke-img class="poke-img" src="/img/poke-shadow.png"/>
+                </div>
+            </div>
+        
+        </div>
+        <div id="enlace"></div>
+    </section>
+    <section id="section2">
+
+        <div class="">
+                <div data-poke-id></div>
+                <div data-poke-types class="poke-types"></div>
+                <div data-poke-stats class="poke-stats"></div>
+        </div>
+
+    </section>
+    <br>
+    <div class="lists__pokemons" id="lists__pokemons">
+        
+    </div>
+
+    <div class="buttons" id="buttons"></div>
+</main>
+<!-- FOOTER -->
+<%- include('partials/footer.ejs') %>
+>>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 </body>
 </html>
