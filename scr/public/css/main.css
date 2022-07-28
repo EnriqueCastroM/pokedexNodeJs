@@ -1,78 +1,260 @@
-main{
-    display: flex;
-    flex-direction: column;
+body {
+    background: rgb(255, 206, 49);
+    background: radial-gradient(circle, rgba(255, 206, 49, 1) 14%, rgba(60, 51, 153, 1) 91%);
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+main {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
-    font-family: 'Roboto Mono', monospace; 
-    color: azure;   
+    font-family: 'Roboto Mono', monospace;
+    color: azure;
+}
+
+#section1 {
+    margin-left: 50%;
+    background-color: #BD0F34;
+    height: 700px;
+    width: 520px;
+    border-radius: 10%;
+    position: relative;
+    display: flex;
+}
+
+.pad {
+    position: absolute; 
+    height: 105px;
+    width: 105px;
+    margin-top: 105%;
+    margin-left: 300px;
+}
+
+.amarillo {
+    height: 70px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: #F9EE60;
+    position: absolute;
+    margin-top: 111%;
+    margin-left: 25%;
+
+}
+
+.cir-negro {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-top: 104%;
+    margin-left: 7%;
+    border-radius: 70px;
+    background-color: #1A1E1E;
+}
+
+.barra-verde {
+    position: relative;
+    background-color: green;
+    width: 55px;
+    height: 10px;
+    margin-top: 102%;
+    margin-left: 6%;
+    border-radius: 5px;
+}
+
+.barra-roja {
+    position: relative;
+    background-color: #FF4763;
+    width: 55px;
+    height: 10px;
+    margin-top: 102%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.contenedor-pcard {
+    position: relative;
+    flex-direction: row;
+    height: 40%;
+    width: 70%;
+    top: 230px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 20px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin-left: -43.5%;
+    background-color: #DEDEDE;
+    border: 1px solid black;
+}
+
+.poke-card {
+    position: absolute;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 20px;
+    color: #000;
+    background-color: #28AAFD;
+    border: 5px solid black;
+    height: 75%;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding-top: 15px;
+}
+
+.poke-img {
+    width: 180px;
+}
+
+#enlace {
+    background-color: #CE1131;
+    margin-top: auto;
+    height: 700px;
+    width: 86px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    margin-left: 84%;
     
-    }
-    
-    body{
-        background-color: black;
-    }
-    form {
-        width: 200px;
-        margin: 20px auto;
-    }
-    
-    input {
-        width: 100%;
-        padding: 10px;
-    }
-    
-    label{
-        font-family: 'Roboto Mono', monospace; 
-        color: azure;
-    }
-    .poke-card {
-        position: relative;
-        height: fit-content;
-        font-family: 'Roboto Mono', monospace;
-        max-width: 300px;
-        border-radius: 4px;
-        color: #000;
-        text-align: center;
-        padding: 10px;
-        margin: 0 auto;
-        background-color: #FFF;
-        border: 1px solid black;
-    }
-    
-    .poke-card::before {
-        content: '';
-        background: radial-gradient(black 33%, transparent 33%);
-        background-size: 3px 3px;
-        border-radius: 4px;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        z-index: -1;
-    }
-    
-    .img-container {
-        position: relative;
-        width: 180px;
-        margin: 10px auto;
-    }
-    
-    .poke-stats div {
-        display: flex;
-        justify-content: space-between;
-        align-content: space-between;
-        padding: 5px;
-        font-size: 18px;
-    }
-    
-    .poke-types div {
-        padding: 5px;
-        margin: 5px;
-        border-radius: 4px;
-        border: 1px dashed black;
-    }
-    
-    .poke-img {
-        width: 180px;
-        border-radius: 50%;
-    }
+}
+
+.top {
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    border-top-left-radius: 30px;
+    background-color: #CE1131;
+    justify-content: center;
+    text-align: center;
+}
+
+.cir-blanco {
+    position: relative;
+    width: 86px;
+    height: 83px;
+    margin-top: -7%;
+    margin-left: 30px;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.cir-azul {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-left: 1PX;
+    background-color: #28AAFD;
+}
+
+.cir-rojo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 32%;
+    border-radius: 50px;
+    background-color: #FF4763;
+
+}
+
+.cir-amarillo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: -4.5%;
+    margin-left: 40%;
+    border-radius: 50px;
+    background-color: yellow;
+}
+
+.cir-verde {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: -4.5%;
+    margin-left: 48%;
+    border-radius: 50px;
+    background-color: green;
+
+}
+
+form {
+    position: absolute;
+    width: 280px;
+    height: 80px;
+    background-color: #BD0F34;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 15%;
+}
+
+label {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 3%;
+    color: azure;
+}
+
+input {
+    width: 40%;
+    margin-top: 3%;
+}
+
+#section2 {
+    margin-top: auto;
+    margin-left: 2%;
+    background-color: #BD0F34;
+    height: 600px;
+    width: 420px;
+    border-radius: 10%;
+}
+
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}
+
+.footer {
+    color: rgb(0, 0, 0);
+    padding: 0.5em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
