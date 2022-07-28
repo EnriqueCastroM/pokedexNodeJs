@@ -5,6 +5,7 @@ const pokeImgContainer = document.querySelector('[data-poke-img-container]');
 const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
+const pokeWeight = document.querySelector('[data-poke-weight]');
 
 const typeColors = {
     electric: '#FFEA70',
@@ -38,7 +39,8 @@ const searchPokemon = event => {
 
 const renderPokemonData = data => {
     const sprite =  data.sprites.front_default;
-    const { stats, types } = data;
+    const { stats, types, weight } = data;
+    console.log(data);
 
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
@@ -46,6 +48,7 @@ const renderPokemonData = data => {
     setCardColor(types);
     renderPokemonTypes(types);
     renderPokemonStats(stats);
+    renderPokemonWeight(weight);
 }
 
 
@@ -80,9 +83,24 @@ const renderPokemonStats = stats => {
     });
 }
 
+const renderPokemonWeight = weight =>{
+    pokeWeight.innerHTML = '';
+    const weightElement = document.createElement("div");
+    const weightElementName = document.createElement("div");
+    const weightElementAmount = document.createElement("div");
+    weightElementName.textContent = 'weight'
+    weightElementAmount.textContent = weight;
+    weightElement.appendChild(weightElementName);
+    weightElement.appendChild(weightElementAmount);
+    pokeWeight.appendChild(weightElement);
+
+
+
+}
+
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'poke-shadow.png');
+    pokeImg.setAttribute('src', 'img/poke-shadow.png');
     pokeImg.style.background =  '#fff';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';

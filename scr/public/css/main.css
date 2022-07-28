@@ -11,7 +11,7 @@ main{
         background-color: black;
     }
     form {
-        width: 200px;
+        width: 400px;
         margin: 20px auto;
     }
     
@@ -28,7 +28,7 @@ main{
         position: relative;
         height: fit-content;
         font-family: 'Roboto Mono', monospace;
-        max-width: 300px;
+        max-width: 400px;
         border-radius: 4px;
         color: #000;
         text-align: center;
@@ -53,7 +53,7 @@ main{
     
     .img-container {
         position: relative;
-        width: 180px;
+        width: 200px;
         margin: 10px auto;
     }
     
@@ -65,11 +65,20 @@ main{
         font-size: 18px;
     }
     
+    
     .poke-types div {
         padding: 5px;
         margin: 5px;
         border-radius: 4px;
         border: 1px dashed black;
+    }
+
+    .poke-weight div {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 5px;
+        font-size: 18px;
     }
     
     .poke-img {

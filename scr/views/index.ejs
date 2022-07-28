@@ -12,11 +12,11 @@
 </head>
 <body>
 <!-- NAVBAR -->
-<%- include('partials/navigation.ejs') %> 
+<!-- <%- include('partials/navigation.ejs') %>  -->
 <main>
     <section id="section1">
         <form action="" onsubmit="searchPokemon(event)">
-            <Label id="who">Who's that Pokémon?</Label>
+            <Label id="who">Ingrese el nombre del Pokemon:</Label>
             <input type="text" name="pokemon" autocomplete="off">
         </form>
         <div data-poke-card class="poke-card">
@@ -27,11 +27,12 @@
             <div data-poke-id></div>
             <div data-poke-types class="poke-types"></div>
             <div data-poke-stats class="poke-stats"></div>
+            <div data-poke-weight class="poke-weight"></div>
         </div>
     </section>
 
 
 </main> 
-<%- include('partials/footer.ejs') %> 
+<!-- <%- include('partials/footer.ejs') %>  -->
 </body>
 </html>
