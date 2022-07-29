@@ -1,28 +1,34 @@
 body {
-    background: rgb(255, 206, 49);
-    background: radial-gradient(circle, rgba(255, 206, 49, 1) 14%, rgba(60, 51, 153, 1) 91%);
-    position: relative;
+    margin: 0;
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(73, 9, 121, 0.8855742125951943) 0%,
+            rgba(244, 0, 255, 1) 100%,
+            rgba(3, 153, 216, 1) 100%);
     padding-bottom: 3em;
     min-height: 100vh;
+    position: relative;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 main {
+    /* background: linear-gradient(180deg, rgba(255,204,1,1) 0%, rgba(51,99,175,1) 40%); */
     padding: 60px;
-    display: grid;
-    grid-template-columns: 50% 50%;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     color: azure;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
+#pokelogo {
+    width: 150px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 #section1 {
-    margin-left: 50%;
+    margin-left: 30%;
     background-color: #BD0F34;
     height: 700px;
     width: 520px;
@@ -30,23 +36,24 @@ main {
     position: relative;
     display: flex;
 }
-<<<<<<< HEAD
+
+#section2 {
+    margin-top: auto;
+    background-color: #BD0F34;
+    height: 600px;
+    width: 420px;
+    border-radius: 10%;
+    display: flex;
+}
 
 .pad {
-    position: absolute; 
-=======
-.pad {
     position: absolute;
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
     height: 105px;
     width: 105px;
     margin-top: 105%;
     margin-left: 300px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .amarillo {
     height: 70px;
     width: 130px;
@@ -55,13 +62,8 @@ main {
     position: absolute;
     margin-top: 111%;
     margin-left: 25%;
-<<<<<<< HEAD
-
 }
 
-=======
-}
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-negro {
     position: relative;
     width: 60px;
@@ -71,10 +73,7 @@ main {
     border-radius: 70px;
     background-color: #1A1E1E;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .barra-verde {
     position: relative;
     background-color: green;
@@ -84,10 +83,7 @@ main {
     margin-left: 6%;
     border-radius: 5px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .barra-roja {
     position: relative;
     background-color: #FF4763;
@@ -97,10 +93,7 @@ main {
     margin-left: 5%;
     border-radius: 5px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .contenedor-pcard {
     position: relative;
     flex-direction: row;
@@ -116,10 +109,7 @@ main {
     background-color: #DEDEDE;
     border: 1px solid black;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-card {
     position: absolute;
     font-family: 'Roboto Mono', monospace;
@@ -133,17 +123,11 @@ main {
     margin-top: 5%;
     padding-top: 15px;
 }
-<<<<<<< HEAD
 
 .poke-img {
-    width: 180px;
+    width: 140px;
 }
 
-=======
-.poke-img {
-    width: 180px;
-}
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 #enlace {
     background-color: #CE1131;
     margin-top: auto;
@@ -154,13 +138,8 @@ main {
     border-top-right-radius: 50px;
     position: absolute;
     margin-left: 84%;
-<<<<<<< HEAD
-    
 }
 
-=======
-}
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .top {
     position: absolute;
     width: 450px;
@@ -170,10 +149,7 @@ main {
     justify-content: center;
     text-align: center;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-blanco {
     position: relative;
     width: 86px;
@@ -184,10 +160,7 @@ main {
     border-radius: 50px;
     background-color: white;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-azul {
     position: relative;
     width: 70px;
@@ -196,10 +169,7 @@ main {
     margin-left: 1PX;
     background-color: #28AAFD;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-rojo {
     position: relative;
     width: 20px;
@@ -208,13 +178,8 @@ main {
     margin-left: 32%;
     border-radius: 50px;
     background-color: #FF4763;
-<<<<<<< HEAD
-
 }
 
-=======
-}
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-amarillo {
     position: relative;
     width: 20px;
@@ -224,10 +189,7 @@ main {
     border-radius: 50px;
     background-color: yellow;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .cir-verde {
     position: relative;
     width: 20px;
@@ -236,13 +198,8 @@ main {
     margin-left: 48%;
     border-radius: 50px;
     background-color: green;
-<<<<<<< HEAD
-
 }
 
-=======
-}
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 form {
     position: absolute;
     width: 280px;
@@ -253,64 +210,42 @@ form {
     margin-top: 25%;
     margin-left: 15%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 label {
     font-family: 'Roboto Mono', monospace;
     margin-top: 3%;
     color: azure;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 input {
     width: 40%;
     margin-top: 3%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
-#section2 {
-    margin-top: auto;
-    margin-left: 2%;
-    background-color: #BD0F34;
-    height: 600px;
-    width: 420px;
-    border-radius: 10%;
+.stats {
+    margin-left: 35%;
+    margin-top: 20%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
-.poke-card::before {
+/* .poke-card::before {
     content: '';
     background: radial-gradient(black 33%, transparent 33%);
     background-size: 3px 3px;
     border-radius: 4px;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
     left: 10px;
     top: 10px;
     z-index: -1;
-}
-<<<<<<< HEAD
+} */
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .img-container {
     position: relative;
     width: 180px;
     margin: 10px auto;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-stats div {
     display: flex;
     justify-content: space-between;
@@ -318,78 +253,271 @@ input {
     padding: 5px;
     font-size: 18px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .poke-types div {
     padding: 5px;
     margin: 5px;
     border-radius: 4px;
     border: 1px dashed black;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
 .footer {
-    color: rgb(0, 0, 0);
+    color: azure;
+    background-color: #212529;
     padding: 0.5em 0;
     position: absolute;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: large;
-<<<<<<< HEAD
-}
-=======
 }
 
 * {
     box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(73, 9, 121, 0.8855742125951943) 0%,
-      rgba(244, 0, 255, 1) 100%,
-      rgba(3, 153, 216, 1) 100%
-    );
-  }
-  button {
+}
+
+button {
     background-color: transparent;
     outline: none;
     border: none;
     font-size: 2em;
     cursor: pointer;
-  }
-  .lists__pokemons {
+}
+
+.lists__pokemons {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     gap: 2em;
     padding: 1em;
     text-align: center;
-  }
-  .pokemon__img {
+}
+
+.pokemon__img {
     border: 1px solid #ccc;
     width: 100%;
     border-radius: 3px;
     margin-top: 8em;
     color: #fff;
     padding: 0.5em;
-  }
-  .pokemon__img img {
+}
+
+.pokemon__img img {
     height: 200px;
     width: 100%;
     margin-top: -5em;
-  }
-  .buttons {
+}
+
+.buttons {
     display: flex;
     justify-content: center;
     width: 200px;
     margin: 2em auto 2em;
-  }
->>>>>>> 725448e227435bf8d8f778e0f0a3c0a1d8df730f
+}
+
+@media screen and (max-width: 1230px) {
+    .stats {
+        margin-left: 30%;
+        margin-top: 30%;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    .top {
+        width: 300px;
+        height: 70px;
+    }
+
+    .cir-blanco {
+        width: 58px;
+        height: 55px;
+        margin-top: -8%;
+        margin-left: 30px;
+        padding: 7px;
+    }
+
+    .cir-azul {
+        position: relative;
+        width: 43px;
+        height: 43px;
+        margin-left: 1PX;
+    }
+
+    .cir-rojo {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        margin-top: 15px;
+        margin-left: 32%;
+        border-radius: 50px;
+        background-color: #FF4763;
+    }
+
+    .cir-amarillo {
+        width: 15px;
+        height: 15px;
+        margin-top: -4.9%;
+    }
+
+    .cir-verde {
+        width: 15px;
+        height: 15px;
+        margin-top: -4.9%;
+    }
+
+    .amarillo {
+        height: 55px;
+        width: 100px;
+        margin-top: 151%;
+    }
+
+    .cir-negro {
+        width: 45px;
+        height: 45px;
+        margin-top: 145%;
+        margin-left: 7%;
+    }
+
+    .barra-verde {
+        width: 40px;
+        height: 8px;
+        margin-top: 140%;
+    }
+
+    .barra-roja {
+        width: 40px;
+        height: 8px;
+        margin-top: 140%;
+        margin-left: 5%;
+    }
+
+    .pad {
+        height: 80px;
+        width: 80px;
+        margin-top: 140%;
+        margin-left: 58%;
+    }
+
+    .contenedor-pcard {
+        height: 35%;
+        width: 68%;
+        margin-left: -45.5%;
+    }
+
+    .poke-card {
+        margin-left: 7.8%;
+    }
+
+    form {
+        position: absolute;
+        width: 250px;
+        height: 60px;
+        margin-left: 6%;
+    }
+
+    #section1 {
+        margin-left: 35%;
+        background-color: #BD0F34;
+        height: 600px;
+        width: 350px;
+    }
+
+    #enlace {
+        background-color: #CE1131;
+        margin-top: auto;
+        height: 600px;
+        width: 70px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 50px;
+        position: absolute;
+        margin-left: 84%;
+    }
+
+    #section2 {
+        height: 530px;
+        width: 330px;
+    }
+
+    .poke-img {
+        width: 90px;
+        margin-left: -6%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    #section1 {
+        margin-left: -5%;
+    }
+    #section2 {
+        margin-left: -20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section1 {
+        margin-left: -10%;
+    }
+    #section2 {
+        margin-left: -1%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #section1 {
+        margin-left: -23%;
+        background-color: #BD0F34;
+        height: 600px;
+        width: 350px;
+    }
+    .stats {
+        margin-left: 25%;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #section1 {
+        margin-left: 7%;
+        background-color: #BD0F34;
+        height: 600px;
+        width: 350px;
+    }
+    #section2 {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .stats {
+        margin-left: 16%;
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #section1 {
+        margin-left: -15%;
+        background-color: #BD0F34;
+        height: 600px;
+        width: 350px;
+    }
+    #section2 {
+        margin-top: 10%;
+        margin-left: -6%;
+    }
+    .stats {
+        margin-left: 16%;
+        margin-top: 30%;
+    }
+}
