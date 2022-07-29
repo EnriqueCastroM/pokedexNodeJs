@@ -5,7 +5,53 @@ const pokeImgContainer = document.querySelector('[data-poke-img-container]');
 const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
-
+const lists__pokemons = document.getElementById('lists__pokemons')
+const buttons = document.getElementById('buttons')
+let urlPokemon = ' https://pokeapi.co/api/v2/pokemon'
+let btnNext;
+let btnPrevious;
+let templateHtml;
+const GetPokemons = async (url) => {
+    try {
+        const response = await fetch(url)
+        const results = await response.json();
+        console.log(results)
+        DataPokemons(results.results)
+        btnNext = results.next ? `<button class="btn" data-url=${results.next}>⏩
+</button>` : ''
+        btnPrevious = results.previous ? `<button class="btn" data-url=${results.previous}>⏮️</button>` : ''
+        buttons.innerHTML = btnPrevious + " " + btnNext
+    } catch (error) {
+        console.log(error)
+    }
+}
+GetPokemons(urlPokemon)
+const DataPokemons = async (data) => {
+    lists__pokemons.innerHTML = '';
+    try {
+        for (let index of data) {
+            const resp = await fetch(index.url)
+            const resul = await resp.json();
+            console.log(resul)
+            templateHtml = `
+            <div class="pokemon__img">
+            <img src=${resul.sprites.other.dream_world.front_default} alt=${resul.name}/>
+            <p>${resul.name}</p>
+            </div>
+            `
+            lists__pokemons.innerHTML += templateHtml
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+buttons.addEventListener('click', (e) => {
+    if (e.target.classList.contains('btn')) {
+        let value = e.target.dataset.url
+        console.log(value)
+        GetPokemons(value)
+    }
+})
 const typeColors = {
     electric: '#FFEA70',
     normal: '#B09398',
@@ -25,8 +71,6 @@ const typeColors = {
     fighting: '#2F2F2F',
     default: '#2A1A1F',
 };
-
-
 const searchPokemon = event => {
     event.preventDefault();
     const { value } = event.target.pokemon;
@@ -35,11 +79,17 @@ const searchPokemon = event => {
         .then(response => renderPokemonData(response))
         .catch(err => renderNotFound())
 }
-
+const imagePokemon = event => {
+    event.preventDefault();
+    const { value } = event.target.pokemon;
+    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
+        .then(data => data.json())
+        .then(response => renderPokemonImg(response))
+        .catch(err => renderNotFound())
+}
 const renderPokemonData = data => {
-    const sprite =  data.sprites.front_default;
+    const sprite = data.sprites.front_default;
     const { stats, types } = data;
-
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
     pokeId.textContent = `Nº ${data.id}`;
@@ -47,15 +97,18 @@ const renderPokemonData = data => {
     renderPokemonTypes(types);
     renderPokemonStats(stats);
 }
-
-
+const renderPokemonImg = data => {
+    const sprite = data.sprites.front_default;
+    const { stats, types } = data;
+    pokeName.textContent = data.name;
+    pokeImg.setAttribute('src', sprite);
+}
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
-    pokeImg.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
+    pokeImg.style.background = `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     pokeImg.style.backgroundSize = ' 5px 5px';
 }
-
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
     types.forEach(type => {
@@ -65,7 +118,6 @@ const renderPokemonTypes = types => {
         pokeTypes.appendChild(typeTextElement);
     });
 }
-
 const renderPokemonStats = stats => {
     pokeStats.innerHTML = '';
     stats.forEach(stat => {
@@ -79,11 +131,10 @@ const renderPokemonStats = stats => {
         pokeStats.appendChild(statElement);
     });
 }
-
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'poke-shadow.png');
-    pokeImg.style.background =  '#fff';
+    pokeImg.setAttribute('src', '/img/Error.jpg');
+    pokeImg.style.background = '#fff';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
     pokeId.textContent = '';

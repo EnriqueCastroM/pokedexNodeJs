@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon scr/index.js",
-    "start" :"node scr/index.js"
+    "start": "node scr/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,6 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
   }
 }
