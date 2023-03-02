@@ -1,7 +1,7 @@
 import express from 'express'
 import {fileURLToPath} from 'url'
 import { dirname, join } from 'path'
-import indexRoutes from './routes/index.js'
+import indexRoutes from './scr/routes/index.js'
 
 const app = express()
 
